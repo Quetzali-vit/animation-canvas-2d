@@ -22,7 +22,7 @@ function getRandomPosition(radius, limit) {
 }
 
 // Definición de la clase Circle
-class Circle {
+class Circle {   
   constructor(x, y, radius, color, speed) {
     this.posX = x; // Posición en el eje X
     this.posY = y; // Posición en el eje Y
@@ -61,7 +61,7 @@ class Circle {
     this.draw(context);
 
     // Si el contador llega a 10, se detiene
-    if (this.stopped) return;
+    if (this.stopped) return;    
 
     // Verifica si el círculo choca con los bordes y cambia la dirección
     if (this.posX + this.radius > canvas.width || this.posX - this.radius < 0) {
